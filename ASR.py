@@ -1,4 +1,4 @@
-- name: ASR
+-  name: ASR
    hosts: asr
    gather_facts: false
    connection: local
@@ -10,7 +10,7 @@
          login_prompt: "Username: "
          prompts:
            - '[>|#]'
-           command:
+         command:
            - terminal length 0
            - enable
            - config t
